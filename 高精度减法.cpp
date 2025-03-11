@@ -17,6 +17,7 @@ bool cmp(vector<int> &A, vector<int> &B)
 vector<int> sub(vector<int> &A, vector<int> &B)
 {
     vector<int> C;
+    
     for (int i = 0, t = 0; i < A.size(); i++)
     {
         t = A[i] - t;
