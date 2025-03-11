@@ -8,9 +8,9 @@ vector<int> mul(vector<int> &A, int b)
     vector<int> C;
 
     int t = 0;
-    for (int i = 0; i < A.size() || t; i++)
+    for (int i = 0; i < A.size() || t; i++)// || t的目的是处理剩余进位
     {
-        if (i < A.size()) t += A[i] * b;
+        if (i < A.size()) t += A[i] * b; // 避免访问数组越界
         C.push_back(t % 10);
         t /= 10;
     }
